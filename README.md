@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portfolio — Muhammad Faturrahman Syakib
 
 Website statis (HTML, CSS, JavaScript vanilla). Tanpa build, tanpa backend.
@@ -31,3 +32,7 @@ Ubah variabel di bagian `:root` pada `css/style.css` (`--red`, `--red-d`, `--mar
 1. Buat repository baru di GitHub, unggah seluruh isi folder `portfolio/` (`index.html` harus di root repo).
 2. Settings → Pages → Source: *Deploy from a branch* → branch `main`, folder `/ (root)` → Save.
 3. Situs aktif di `https://username.github.io/nama-repo/`.
+=======
+# personal-portfolio
+A personal portfolio showcasing my projects, skills, and experience in web development and information systems.
+>>>>>>> a5b33ebd75cb6d77e26ff2bb0b8d04a1e8a2183d

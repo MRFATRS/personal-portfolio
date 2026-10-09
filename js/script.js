@@ -2,9 +2,9 @@
 // Isi dengan data asli. Kosongkan ("") jika belum ada: tombol/tautan akan otomatis dinonaktifkan.
 const CONFIG = {
   email: "faturrahmansyakib95@gmail.com",      // contoh: "nama@email.com"
-  github: "",     // contoh: "https://github.com/username"
-  linkedin: "",   // contoh: "https://www.linkedin.com/in/username"
-  instagram: ""   // opsional
+  github: "https://github.com/MRFATRS",     // contoh: "https://github.com/username"
+  linkedin: "https://www.linkedin.com/in/muhammad-faturrahman-syakib-465901377",   // contoh: "https://www.linkedin.com/in/username"
+  instagram: "@smfaturrahman"   // opsional
 };
 
 // icon = nama class Devicon (opsional). Tanpa icon, tampil monogram.
