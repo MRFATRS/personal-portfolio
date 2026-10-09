@@ -48,7 +48,8 @@ ul,ol{list-style:none}
 .grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 60% at 65% 40%,#000,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 65% 40%,#000,transparent 75%);animation:drift 24s linear infinite}
 @keyframes drift{to{background-position:56px 56px}}
 .glow{position:absolute;width:560px;height:560px;right:-120px;top:8%;background:radial-gradient(circle,rgba(110,15,34,.65),transparent 65%);filter:blur(30px)}
-.hero-in{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero-in{position:relative;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(1.5rem,3vw,3rem);align-items:center}
+.hero-copy{min-width:0}
 .kicker{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.8rem;margin-bottom:.9rem}
 h1{font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.04;letter-spacing:-.035em;font-weight:800}
 .hero h2{font-size:clamp(1.15rem,2.2vw,1.6rem);font-weight:600;margin-top:1rem;color:#e7e8ec}
@@ -62,8 +63,8 @@ h1{font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.04;letter-spacing:-.035em;
 .social span{opacity:.45;cursor:not-allowed}
 
 /* Hero visual */
-.hero-visual{display:grid;justify-items:end;gap:1rem;width:100%;max-width:420px;justify-self:center}
-.profile-photo{display:block;width:min(100%,360px);aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(225,29,63,.45);border-radius:18px;box-shadow:0 18px 55px -24px rgba(225,29,63,.55)}
+.hero-visual{display:grid;justify-items:end;gap:1rem;width:100%;max-width:420px;min-width:0;justify-self:center}
+.profile-photo{display:block;width:100%;max-width:320px;height:auto;aspect-ratio:4/5;object-fit:cover;border:1px solid rgba(225,29,63,.45);border-radius:18px;box-shadow:0 18px 55px -24px rgba(225,29,63,.55)}
 .profile-photo.rise{animation-delay:.18s}
 
 /* Terminal */
@@ -192,10 +193,10 @@ input:focus,textarea:focus{outline:none;border-color:var(--red);box-shadow:0 0 0
 
 /* Responsive */
 @media (max-width:900px){
-  .hero-in,.two,.two.eq{grid-template-columns:1fr}
+  .hero-in{grid-template-columns:minmax(0,1fr)}
+  .two,.two.eq{grid-template-columns:1fr}
   .term{transform:none;max-width:520px}
   .hero-visual{max-width:520px;justify-items:center}
-  .profile-photo{width:min(100%,340px)}
   .sec{padding:76px 0}
 }
 @media (max-width:820px){
